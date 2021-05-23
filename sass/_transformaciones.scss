@@ -1,0 +1,25 @@
+
+
+/* Transform u efectos*/
+
+//fotografia
+.fotografia{
+    .fotografia__estilos {
+	transition: filter 5s, transform 1.5s;
+        &:hover{
+            transform: scale(1.1);
+	    filter: grayscale(90%);
+        }
+    }
+  
+}
+
+//diseno
+
+.diseno{
+    .diseno__imagen{
+        &:hover{
+            filter: brightness(1.5);
+    }
+    }
+}    

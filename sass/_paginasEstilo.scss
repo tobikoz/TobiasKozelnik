@@ -1,0 +1,315 @@
+//Etiquetas principales 
+
+*{
+    margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background-color: rgb(255, 255, 255);
+	width: auto;
+    padding: 1%;
+}
+
+footer {
+	width: $full-width;
+	text-align: center;
+	font-size: x-small;
+	font-family: $f-family;
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: $spacing;
+	font-family: $f-family;
+	text-transform: uppercase;
+}
+
+h3 {
+	text-align: center;
+	font-family: $f-family;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	font-family: $f-family;
+	margin: auto;
+	text-align: center;
+	font-size: $f-medium;
+}
+
+#bodyPrincipal {
+	background: url(../imagenes/background.png) no-repeat;
+	background-position: 0% 0%;
+	background-attachment: fixed;
+	width: auto;
+	background-size:cover;
+        footer{
+            color: white;
+        }
+}
+
+
+/* Diseño de paginas */
+
+/* Generico */
+.bloque{
+	display: grid;
+	place-items: center;
+	margin: 50px 0px 30px;
+}
+
+.bloque__texto{
+	display: grid;
+	place-items: center;
+	margin: 10px 0px 40px;
+	width: $full-width*0.52;
+}
+
+.bloque__titulo{
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: $f-family;
+	text-transform: uppercase;
+	font-size: $f-large;
+}
+/*index*/
+
+.bloque--principal {
+	margin: 50px 0px 130px;
+}
+
+.bloque--textoP {
+	width: 65%;
+    max-width:740px;
+}
+
+.bloque__texto--principal{
+	line-height: 135%;
+	letter-spacing: 1.2px;
+	font-size: $f-small;
+    font-family: $f-family;
+	width: ($full-width)-4%;
+	height: 100%;
+}
+
+.bloque__logotipo{
+	max-width: $full-width;
+	margin: 15px;
+}
+/*Quien Soy*/
+
+
+.soy{
+	display: grid;
+	grid-template-columns: fr fr fr;
+	justify-items: center;
+	align-items: center;
+	grid-gap: 10px;
+	background-color: black;
+	color: white;
+	font-family: $f-family;
+	grid-template: 'tituloQ tituloQ tituloQ' 'titDiseno titFoto titVideo' 'FotDiseno FotFoto FotVideo' 'TexDiseno TexFoto TexVideo';
+}
+
+.soy__titulo{
+	grid-area: tituloQ;
+	margin: auto;
+	height: 70px;
+	padding: 20px;
+}
+
+.soy__dfv{
+	font-size: $f-medium;
+	margin: auto;
+	padding: 0 0 30px;
+	width: $full-width;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.soy__dfv--diseno{
+	grid-area: titDiseno;
+}
+
+.soy__dfv--foto {
+	grid-area: titFoto;
+}
+
+.soy__dfv--video {
+	grid-area: titVideo;
+}
+
+.soy__imagen{
+	width: $full-width;
+	height: 25vh;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.soy__imagen--diseno{
+	grid-area: FotDiseno;
+}
+
+.soy__imagen--foto{
+	grid-area: FotFoto;
+}
+
+.soy__imagen--video{
+	grid-area: FotVideo;
+}
+
+.soy__texto{
+	margin: auto;
+	padding: 0 0 50px;
+	width: $full-width*0.5;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.soy__texto--diseno{
+	grid-area: TexDiseno;
+}
+
+.soy__texto--foto{
+	grid-area: TexFoto;
+}
+
+.soy__texto--video{
+	grid-area: TexVideo;
+}
+
+/*Diseno*/
+
+.diseno{
+	display: grid;
+	grid-gap: 10px;
+	width: $full-width*0.95;
+	margin: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+/*Fotografia*/
+
+
+.fotografia{
+	display: grid;
+	grid-gap: 10px;
+	width: $full-width*0.95;
+	margin: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template: 'foto1 foto3 foto4' 'foto1 foto3 foto5' 'foto6 foto7 foto2' 'foto8  foto7 foto2';
+}
+
+.fotografia__estilos{
+	width: $full-width;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+}
+
+.fotografia__estilos--foto1{
+	grid-area: foto1;
+}
+.fotografia__estilos--foto2{
+	grid-area: foto2;
+}
+
+.fotografia__estilos--foto3{
+	grid-area: foto3;
+}
+
+.fotografia__estilos--foto4{
+	grid-area: foto4;
+}
+
+.fotografia__estilos--foto5{
+	grid-area: foto5;
+}
+
+.fotografia__estilos--foto6{
+	grid-area: foto6;
+}
+
+.fotografia__estilos--foto7{
+	grid-area: foto7;
+}
+
+.fotografia__estilos--foto8{
+	grid-area: foto8;
+}
+
+/*Video*/
+
+
+/*Contacto*/
+.bloque__contacto{
+	display: grid;
+	place-items: center;
+	margin: 50px 0px 40px;
+	align-items: center;
+}
+
+.bloque__ubicacion{
+	display: grid;
+	place-items: center;
+	margin: 50px 0px 40px;
+}
+
+.botonContacto{
+    width:$full-width;
+}
+
+.bloque__rrss{
+	display: grid;
+	place-items: center;
+	align-items: center;
+	grid-gap: 10px;
+	width: $full-width*0.9;
+	margin: auto;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template: 'tit tit tit tit' 'insta face link twit';
+	
+}
+.bloque__titulo--rrss{
+	grid-area:tit;
+}
+
+.bloque__estilosRRSS--facebook{
+	grid-area:face;
+}
+
+.bloque__estilosRRSS--instagram{
+	grid-area:insta;
+}
+
+.bloque__estilosRRSS--linkedin{
+	grid-area:link;
+}
+
+.bloque__estilosRRSS--twitter{
+	grid-area:twit;
+}

@@ -1,0 +1,109 @@
+/* Responsive pagina 768px*/
+
+@media screen and (max-width:768px){
+	.fotografia {
+		grid-template-columns: 50% 50%;
+		grid-template: 'foto1 foto3' 'foto4  foto4' 'foto5 foto5' 'foto6  foto6' 'foto7 foto2' 'foto7  foto2' 'foto8  foto8';
+	}
+	.diseno {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		margin: auto;
+		width: auto;
+	}
+	body {
+		font-size: 12px;
+	}
+	.centroPaginaPrincipal{
+		display: grid;
+		place-items: center;
+		margin: 40px 0px 90px;
+	}
+
+    body{
+        header{
+            ul{
+                li{
+                    a{
+                        font-size: 13px; 
+                    }
+                }
+            }
+        }
+    }
+
+    .soy{
+        grid-template-columns: 20% 40% 40%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template:'tituloQ tituloQ tituloQ' 'titDiseno FotDiseno TexDiseno' 'titFoto FotFoto TexFoto' 'titVideo FotVideo TexVideo' ; 					
+        }
+        .soy img{
+            width: $full-width/2;
+        }
+    
+        .soy__texto{
+            width:$full-width*0.7;
+        }
+    
+    }
+
+/*Responsive 320px*/
+
+@media screen and (max-width:320px) {
+	.fotografia {
+		grid-template-columns: 1fr;
+		grid-template: 'foto1' 'foto3' 'foto4' 'foto5' 'foto6' 'foto7' 'foto2' 'foto7' 'foto8';
+	}
+	body {
+		font-size: $f-small;
+        header{
+            ul{
+                display: flex;
+                flex-direction: column
+            }
+                li{
+                   a{
+                    font-size: $f-small;
+                   }    
+                }
+        }
+    }
+	.diseno {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.soy{
+		grid-template-columns: 35% 65%;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+		grid-template:'tituloQ tituloQ' 'titDiseno TexDiseno' 'titFoto TexFoto' 'titVideo  TexVideo'; 					
+		
+		}
+		
+	.soy__titulo{
+	margin: auto;
+	height: 15px;
+	padding: 50px;
+	
+	}
+
+	.soy__dfv {
+	font-size: small;
+	margin: auto;
+	padding: 0 0 5px;
+	width: $full-width;
+	height: 100%;
+	object-fit: cover;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	}
+
+	.soy__texto{
+		margin: auto;
+		padding: 0 0 5px;
+		width: $full-width*0.9;
+	}
+	
+}

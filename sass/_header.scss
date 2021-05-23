@@ -1,0 +1,49 @@
+header {
+	width: $full-width;
+	margin: 20px auto;
+    max-width:800px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+/* Lista Principal (aplica todos) */
+
+.listaprincipal {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+    li{
+        background-size: auto;
+        padding: 0 0 5px 13px;
+        font-family: $f-family;
+        display: inline-block;
+        font-size: 15px;
+            &:hover{
+                ul{
+                    display: block;
+                }
+            }
+            a{
+                padding: 10px 20px;
+                display: inline-block;
+                border:inherit 2px #000000;
+                border-radius: 3px;
+
+                 
+            }
+            
+    
+    }
+    a{
+        &:hover{
+            background: black;
+            color:white !important;
+
+    }
+    
+
+    }
+
+}
