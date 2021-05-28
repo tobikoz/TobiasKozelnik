@@ -47,6 +47,42 @@
     
     }
 
+/*Responsive 560 pagina soy*/
+.soy{
+	grid-template-columns: 35% 65%;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template:'tituloQ tituloQ' 'titDiseno TexDiseno' 'titFoto TexFoto' 'titVideo  TexVideo'; 					
+	
+	}
+	
+.soy__titulo{
+margin: auto;
+height: 15px;
+padding: 50px;
+
+}
+
+.soy__dfv {
+font-size: small;
+margin: auto;
+padding: 0 0 5px;
+width: $full-width;
+height: 100%;
+object-fit: cover;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-evenly;
+}
+
+.soy__texto{
+	margin: auto;
+	padding: 0 0 5px;
+	width: $full-width*0.9;
+}
+
+
+
 /*Responsive 380px*/
 
 @media screen and (max-width:380px) {
@@ -73,37 +109,5 @@
 		grid-template-rows: 1fr 1fr 1fr;
 	}
 
-	.soy{
-		grid-template-columns: 35% 65%;
-		grid-template-rows: 1fr 1fr 1fr 1fr;
-		grid-template:'tituloQ tituloQ' 'titDiseno TexDiseno' 'titFoto TexFoto' 'titVideo  TexVideo'; 					
-		
-		}
-		
-	.soy__titulo{
-	margin: auto;
-	height: 15px;
-	padding: 50px;
-	
-	}
-
-	.soy__dfv {
-	font-size: small;
-	margin: auto;
-	padding: 0 0 5px;
-	width: $full-width;
-	height: 100%;
-	object-fit: cover;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	}
-
-	.soy__texto{
-		margin: auto;
-		padding: 0 0 5px;
-		width: $full-width*0.9;
-	}
 	
 }
