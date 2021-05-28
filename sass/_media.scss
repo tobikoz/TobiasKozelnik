@@ -47,9 +47,9 @@
     
     }
 
-/*Responsive 320px*/
+/*Responsive 380px*/
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:380px) {
 	.fotografia {
 		grid-template-columns: 1fr;
 		grid-template: 'foto1' 'foto3' 'foto4' 'foto5' 'foto6' 'foto7' 'foto2' 'foto7' 'foto8';
