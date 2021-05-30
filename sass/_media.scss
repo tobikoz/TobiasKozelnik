@@ -48,6 +48,7 @@
     }
 
 /*Responsive 560 pagina soy*/
+@media screen and (max-width:560px) {
 .soy{
 	grid-template-columns: 35% 65%;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -81,7 +82,7 @@ justify-content: space-evenly;
 	width: $full-width*0.9;
 }
 
-
+}
 
 /*Responsive 380px*/
 
