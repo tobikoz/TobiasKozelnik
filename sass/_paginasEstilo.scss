@@ -95,7 +95,7 @@ p {
 .bloque__texto--principal{
 	line-height: 135%;
 	letter-spacing: 1.2px;
-	font-size: $f-small;
+	font-size: 1rem;
     font-family: $f-family;
 	width: ($full-width)-4%;
 	height: 100%;
@@ -153,8 +153,8 @@ p {
 }
 
 .soy__imagen{
-	width: $full-width;
-	height: 25vh;
+	width: 240px;
+	height: 300px;
 	object-fit: cover;
 	display: flex;
 	flex-direction: row;
@@ -177,13 +177,14 @@ p {
 .soy__texto{
 	margin: auto;
 	padding: 0 0 50px;
-	width: $full-width*0.5;
+	width: $full-width*0.7;
 	height: 100%;
 	object-fit: cover;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
+	
 }
 
 .soy__texto--diseno{
@@ -263,6 +264,7 @@ p {
 }
 
 /*Video*/
+
 
 
 /*Contacto*/

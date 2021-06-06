@@ -38,11 +38,11 @@
         grid-template:'tituloQ tituloQ tituloQ' 'titDiseno FotDiseno TexDiseno' 'titFoto FotFoto TexFoto' 'titVideo FotVideo TexVideo' ; 					
         }
         .soy img{
-            width: $full-width/2;
+            width: $full-width;
         }
     
         .soy__texto{
-            width:$full-width*0.7;
+            width:$full-width*0.8;
         }
     
     }
@@ -50,39 +50,17 @@
 /*Responsive 560 pagina soy*/
 @media screen and (max-width:560px) {
 .soy{
-	grid-template-columns: 35% 65%;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
-	grid-template:'tituloQ tituloQ' 'titDiseno TexDiseno' 'titFoto TexFoto' 'titVideo  TexVideo'; 					
+	grid-template-columns: 1fr;
+	grid-template:'tituloQ' 'titDiseno' 'FotDiseno' 'TexDiseno' 'titFoto' 'FotFoto' 'TexFoto' 'titVideo' 'FotVideo' 'TexVideo' ; 					
 	
 	}
 	
-.soy__titulo{
-margin: auto;
-height: 15px;
-padding: 50px;
-
+.bloque__texto{
+    width: 66%;
+}
 }
 
-.soy__dfv {
-font-size: small;
-margin: auto;
-padding: 0 0 5px;
-width: $full-width;
-height: 100%;
-object-fit: cover;
-display: flex;
-flex-direction: row;
-flex-wrap: nowrap;
-justify-content: space-evenly;
-}
 
-.soy__texto{
-	margin: auto;
-	padding: 0 0 5px;
-	width: $full-width*0.9;
-}
-
-}
 
 /*Responsive 380px*/
 

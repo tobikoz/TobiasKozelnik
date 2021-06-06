@@ -142,7 +142,7 @@ p {
 .bloque__texto--principal {
   line-height: 135%;
   letter-spacing: 1.2px;
-  font-size: 0.76rem;
+  font-size: 1rem;
   font-family: "raleway", "sans-serif";
   width: 96%;
   height: 100%;
@@ -212,8 +212,8 @@ p {
 }
 
 .soy__imagen {
-  width: 100%;
-  height: 25vh;
+  width: 240px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   display: -webkit-box;
@@ -245,7 +245,7 @@ p {
 .soy__texto {
   margin: auto;
   padding: 0 0 50px;
-  width: 50%;
+  width: 70%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -444,15 +444,27 @@ p {
     grid-template: 'tituloQ tituloQ tituloQ' 'titDiseno FotDiseno TexDiseno' 'titFoto FotFoto TexFoto' 'titVideo FotVideo TexVideo';
   }
   .soy img {
-    width: 50%;
+    width: 100%;
   }
   .soy__texto {
-    width: 70%;
+    width: 80%;
   }
 }
 
-/*Responsive 320px*/
-@media screen and (max-width: 320px) {
+/*Responsive 560 pagina soy*/
+@media screen and (max-width: 560px) {
+  .soy {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-template: 'tituloQ' 'titDiseno' 'FotDiseno' 'TexDiseno' 'titFoto' 'FotFoto' 'TexFoto' 'titVideo' 'FotVideo' 'TexVideo';
+  }
+  .bloque__texto {
+    width: 66%;
+  }
+}
+
+/*Responsive 380px*/
+@media screen and (max-width: 380px) {
   .fotografia {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -478,44 +490,6 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-  }
-  .soy {
-    -ms-grid-columns: 35% 65%;
-        grid-template-columns: 35% 65%;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template: 'tituloQ tituloQ' 'titDiseno TexDiseno' 'titFoto TexFoto' 'titVideo  TexVideo';
-  }
-  .soy__titulo {
-    margin: auto;
-    height: 15px;
-    padding: 50px;
-  }
-  .soy__dfv {
-    font-size: small;
-    margin: auto;
-    padding: 0 0 5px;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .soy__texto {
-    margin: auto;
-    padding: 0 0 5px;
-    width: 90%;
   }
 }
 
